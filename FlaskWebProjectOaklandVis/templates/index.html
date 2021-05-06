@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<p></p>
+<div class="row">
+    <div class="col-md-2">
+        <button onclick="window.location.href='{{ url_for('home') }}';" class="btn btn-default">
+            <img src="..\static\images\graphs.png" width="30" alt="Graphs">
+        </button>
+        <button onclick="window.location.href='{{ url_for('data') }}';" class="btn btn-default">
+            <img src="..\static\images\data.png" width="30" alt="Data">
+        </button>
+        <button onclick="window.location.href='{{ url_for('graphs') }}';" class="btn btn-default">
+            <img src="..\static\images\map.png" width="30" alt="Map">
+        </button>
+        <h4>TYPE OF CRIME:</h4>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\stolenvehicle.png" class="img-rounded" alt="stolenvehicle" width="24" height="24">
+                <label>STOLEN VEHICLE</label></button>
+            </div>    
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\securitycheck.png" class="img-rounded" alt="securitycheck" width="24" height="24">
+                <label for="myCheckBox">SECURITY CHECK</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\disturbingpeace.png" class="img-rounded" alt="disturbingpeace" width="24" height="24">
+                <label for="myCheckBox">DISTURBING THE PEACE</label>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\drugdealing.png" class="img-rounded" alt="drugdealing" width="24" height="24">
+                <label for="myCheckBox">DRUG DEALING</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\battery.png" class="img-rounded" alt="battery" width="24" height="24">
+                <label for="myCheckBox">BATTERY</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\robbery.png" class="img-rounded" alt="robbery" width="24" height="24">
+                <label for="myCheckBox">ROBBERY</label></button>          
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\prostitution.png" class="img-rounded" alt="prostitution" width="24" height="24">
+                <label for="myCheckBox">PROSTITUTION</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\gunshots.png" class="img-rounded" alt="gunshots" width="24" height="24">
+                <label for="myCheckBox">GUNSHOTS</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\murder.png" class="img-rounded" alt="murder" width="24" height="24">
+                <label for="myCheckBox">MURDER</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\alarmringer.png" class="img-rounded" alt="alarmringer" width="24" height="24">
+                <label for="myCheckBox">ALARM RINGER</label></button>
+            </div> 
+        </div>   
+    <div class="col-md-10">
+    <div class='tableauPlaceholder' id='viz1619297251482' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Oa&#47;OaklandCrimesVisualization2&#47;ColumnChart&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OaklandCrimesVisualization2&#47;ColumnChart' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Oa&#47;OaklandCrimesVisualization2&#47;ColumnChart&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1619297251482');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<p></p>
+<div class="row">
+    <div class="col-md-2">
+        <button onclick="window.location.href='{{ url_for('home') }}';" class="btn btn-default">
+            <img src="..\static\images\graphs.png" width="30" alt="Graphs">
+        </button>
+        <button onclick="window.location.href='{{ url_for('data') }}';" class="btn btn-default">
+            <img src="..\static\images\data.png" width="30" alt="Data">
+        </button>
+        <button onclick="window.location.href='{{ url_for('graphs') }}';" class="btn btn-default">
+            <img src="..\static\images\map.png" width="30" alt="Map">
+        </button>
+        <h4>TYPE OF CRIME:</h4>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\stolenvehicle.png" class="img-rounded" alt="stolenvehicle" width="24" height="24">
+                <label>STOLEN VEHICLE</label></button>
+            </div>    
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\securitycheck.png" class="img-rounded" alt="securitycheck" width="24" height="24">
+                <label for="myCheckBox">SECURITY CHECK</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\disturbingpeace.png" class="img-rounded" alt="disturbingpeace" width="24" height="24">
+                <label for="myCheckBox">DISTURBING THE PEACE</label>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\drugdealing.png" class="img-rounded" alt="drugdealing" width="24" height="24">
+                <label for="myCheckBox">DRUG DEALING</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\battery.png" class="img-rounded" alt="battery" width="24" height="24">
+                <label for="myCheckBox">BATTERY</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\robbery.png" class="img-rounded" alt="robbery" width="24" height="24">
+                <label for="myCheckBox">ROBBERY</label></button>          
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\prostitution.png" class="img-rounded" alt="prostitution" width="24" height="24">
+                <label for="myCheckBox">PROSTITUTION</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\gunshots.png" class="img-rounded" alt="gunshots" width="24" height="24">
+                <label for="myCheckBox">GUNSHOTS</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\murder.png" class="img-rounded" alt="murder" width="24" height="24">
+                <label for="myCheckBox">MURDER</label></button>
+            </div>
+            <div class="wrapper">
+                <button class="btn btn-default">
+                <img src="..\static\images\alarmringer.png" class="img-rounded" alt="alarmringer" width="24" height="24">
+                <label for="myCheckBox">ALARM RINGER</label></button>
+            </div>    
+    </div>
+    <div class="col-md-10">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1cOpT8KBRz5JlQbDomYhv5N3_PxSxIxH5" width="900" height="700"></iframe>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
