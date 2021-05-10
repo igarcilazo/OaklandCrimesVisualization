@@ -25,12 +25,12 @@ def data():
         year=datetime.now().year,
     )
 
-@app.route('/graphs')
-def graphs():
+@app.route('/map')
+def map():
     """Renders the home page."""
     return render_template(
-        'graphs.html',
-        title='Graphs',
+        'map.html',
+        title='Map',
         year=datetime.now().year,
     )
 
@@ -61,4 +61,13 @@ def alert():
         title='Alert',
         year=datetime.now().year,
         message='Your alerts page.'
+    )
+@app.route('/signup')
+def signup():
+    """Renders the profile page."""
+    return render_template(
+        'signup.html',
+        title='Signup',
+        year=datetime.now().year,
+        message='Your signup page.'
     )
