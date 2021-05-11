@@ -16,60 +16,74 @@
             <img src="..\static\images\map.png" width="30" alt="Map">
         </button>
         <h4>QUICK SEARCH:</h4>
+            <form action="">
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="stolenvehicle" name="stolenvehicle" value="stolenvehicle">
                 <img src="..\static\images\stolenvehicle.png" class="img-rounded" alt="stolenvehicle" width="24" height="24">
-                <label>STOLEN VEHICLE</label></button>
+                <label for="myCheckBox"><small>STOLEN VEHICLE</small></label>
             </div>    
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="securitycheck" name="securitycheck" value="securitycheck">
                 <img src="..\static\images\securitycheck.png" class="img-rounded" alt="securitycheck" width="24" height="24">
-                <label for="myCheckBox">SECURITY CHECK</label></button>
+                <label for="myCheckBox"><small>SECURITY CHECK</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="disturbingpeace" name="disturbingpeace" value="disturbingpeace">
                 <img src="..\static\images\disturbingpeace.png" class="img-rounded" alt="disturbingpeace" width="24" height="24">
-                <label for="myCheckBox">DISTURBING THE PEACE</label>
+                <label for="myCheckBox"><small>DISTURBING THE PEACE</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
-                <img src="..\static\images\drugdealing.png" class="img-rounded" alt="drugdealing" width="24" height="24">
-                <label for="myCheckBox">DRUG DEALING</label></button>
+                <input type="checkbox" id="disturbingpeace" name="disturbingpeace" value="disturbingpeace">
+                <img src="..\static\images\disturbingpeace.png" class="img-rounded" alt="drugdealing" width="24" height="24">
+                <label for="myCheckBox"><small>DRUG DEALING</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="battery" name="battery" value="battery">
                 <img src="..\static\images\battery.png" class="img-rounded" alt="battery" width="24" height="24">
-                <label for="myCheckBox">BATTERY</label></button>
+                <label for="myCheckBox"><small>BATTERY</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="robbery" name="robbery" value="robbery">
                 <img src="..\static\images\robbery.png" class="img-rounded" alt="robbery" width="24" height="24">
-                <label for="myCheckBox">ROBBERY</label></button>          
+                <label for="myCheckBox"><small>ROBBERY</small></label>         
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="prostitution" name="prostitution" value="prostitution">
                 <img src="..\static\images\prostitution.png" class="img-rounded" alt="prostitution" width="24" height="24">
-                <label for="myCheckBox">PROSTITUTION</label></button>
+                <label for="myCheckBox"><small>PROSTITUTION</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="gunshots" name="gunshots" value="gunshots">
                 <img src="..\static\images\gunshots.png" class="img-rounded" alt="gunshots" width="24" height="24">
-                <label for="myCheckBox">GUNSHOTS</label></button>
+                <label for="myCheckBox"><small>GUNSHOTS</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="murder" name="murder" value="murder">
                 <img src="..\static\images\murder.png" class="img-rounded" alt="murder" width="24" height="24">
-                <label for="myCheckBox">MURDER</label></button>
+                <label for="myCheckBox"><small>MURDER</small></label>
             </div>
             <div class="wrapper">
-                <button class="btn btn-default">
+                <input type="checkbox" id="alarmringer" name="alarmringer" value="alarmringer">
                 <img src="..\static\images\alarmringer.png" class="img-rounded" alt="alarmringer" width="24" height="24">
-                <label for="myCheckBox">ALARM RINGER</label></button>
-            </div>    
+                <label for="myCheckBox"><small>ALARM RINGER</small></label>
+            </div>
+            <div class="wrapper">
+            <label for="start">Date Range:</label>
+            </div>
+            <div class="wrapper">
+            <input type="date" id="start" name="start">Start
+            <input type="date" id="end" name="end">End
+            </div>
+            <br>
+            <div class="wrapper">
+            <input class="btn btn-default" type="submit" value="Submit">
+            </div>
+            </form>
         </div>
     <div class="col-md-8">
+        <h2>Oakland California Crime Data</h2>
     <div class='tableauPlaceholder' id='viz1620497276954' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Oa&#47;OaklandCrimesVisualization2&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OaklandCrimesVisualization2&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Oa&#47;OaklandCrimesVisualization2&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1620497276954');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
-        <h1 id="section1">Oakland Police Beat Map</h1>
+        <h2 id="section1">Oakland Police Beat Map</h2>
         <img src="..\static\images\beatmap.jpg" alt="Oakland Police Beat Map" width="100%" height="100%">
     </div>
     <div class="col-md-2">
