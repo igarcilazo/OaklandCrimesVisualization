@@ -1,9 +1,9 @@
 """
-This script runs the FlaskWebProjectOaklandVis application using a development server.
+This script runs the sanjosecrimevisualization application using a development server.
 """
 
 from os import environ
-from FlaskWebProjectOaklandVis import app
+from sanjosecrimevisualization import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')

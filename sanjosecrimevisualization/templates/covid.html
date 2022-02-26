@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<p></p>
+<div class="row">
+    <div class="col-md-3">
+        <button onclick="window.location.href='{{ url_for('home') }}';" class="btn btn-default">
+            <img src="..\static\images\graphs.png" width="29" alt="Crimes">
+        </button>
+        <button onclick="window.location.href='{{ url_for('activities') }}';" class="btn btn-default">
+            <img src="..\static\images\data.png" width="29" alt="Activities">
+        </button>
+        <button onclick="window.location.href='{{ url_for('income') }}';" class="btn btn-default">
+            <img src="..\static\images\map.png" width="29" alt="Income">
+        </button>
+        <button onclick="window.location.href='{{ url_for('covid') }}';" class="btn btn-default">
+            <img src="..\static\images\covid.png" width="29" alt="Covid">
+        </button>
+        <h6 id="section1">SAN JOSE NEIGHBORHOOD</h6>
+        <img src="..\static\images\sanjoseneighborhood1.jpg" alt="San Jose Neigborhood" width="300" height="300">
+        <br>
+        <br>
+        <h6 id="section1">SAN JOSE BEAT MAP</h6>
+        <img src="..\static\images\beatmap.jpg" alt="Oakland Police Beat Map" width="300" height="300%">
+        <br>
+        </div>
+    <div class="col-md-9">
+        <h3>SAN JOSE COVID DATA</h3>
+
+    <iframe _ngcontent-upr-c86="" frameborder="0" scrolling="yes" allowfullscreen="" src="https://sccgov.maps.arcgis.com/apps/webappviewer/index.html?id=b90dc6181a9f481a956aef9218b84d0a&amp;mobileBreakPoint=500&amp;mapOnly=true&amp;showLayers=COVID%20Cases%20By%20ZipCode"  width="100%" height="600px" ></iframe>
+
+
+    </div>
+    <div class="col-md-2">
+
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+<br>
+<div class="container"> 
+	<div class="row">
+		<div class="col-sm-2"> </div>
+		<div class="col-sm-4"> 
+			<h4>Type of Crime</h4>
+			<span class="subtitle" style="text-align:left">Select records you would like to receive:</span>
+
+			<form action="/action_page.php">
+				<input type="checkbox" id="stolenvehicle" name="stolenvehicle" value="stolenvehicle">
+					<img src="..\static\images\stolenvehicle.png" class="img-rounded" alt="stolenvehicle" width="24" height="24">
+					<label for="stolenvehicle">STOLEN VEHICLE</label><br>
+				<input type="checkbox" id="securitycheck" name="securitycheck" value="securitycheck">
+					<img src="..\static\images\securitycheck.png" class="img-rounded" alt="securitycheck" width="24" height="24">
+					<label for="securitycheck">SECURITY CHECK</label><br>
+				<input type="checkbox" id="disturbingpeace" name="disturbingpeace" value="disturbingpeace">
+					<img src="..\static\images\disturbingpeace.png" class="img-rounded" alt="disturbingpeace" width="24" height="24">
+					<label for="disturbingpeace">DISTURBING THE PEACE</label><br>
+				<input type="checkbox" id="drugdealing" name="drugdealing" value="drugdealing">
+					<img src="..\static\images\drugdealing.png" class="img-rounded" alt="drugdealing" width="24" height="24">
+					<label for="drugdealing">DRUG DEALING</label><br>
+				<input type="checkbox" id="battery" name="battery" value="battery">
+					<img src="..\static\images\battery.png" class="img-rounded" alt="battery" width="24" height="24">
+					<label for="battery">BATTERY</label><br>
+				<input type="checkbox" id="stolenvehicle" name="stolenvehicle" value="stolenvehicle">
+					<img src="..\static\images\stolenvehicle.png" class="img-rounded" alt="stolenvehicle" width="24" height="24">
+					<label for="stolenvehicle">STOLEN VEHICLE</label><br>
+				<input type="checkbox" id="robbery" name="robbery" value="robbery">
+					<img src="..\static\images\robbery.png" class="img-rounded" alt="robbery" width="24" height="24">
+					<label for="robbery">ROBBERY</label><br>
+				<input type="checkbox" id="prostitution" name="prostitution" value="prostitution">
+					<img src="..\static\images\prostitution.png" class="img-rounded" alt="prostitution" width="24" height="24">
+					<label for="prostitution">PROSTITUTION</label><br>
+				<input type="checkbox" id="gunshots" name="gunshots" value="gunshots">
+					<img src="..\static\images\gunshots.png" class="img-rounded" alt="gunshots" width="24" height="24">
+					<label for="gunshots">GUNSHOTS</label><br>
+				<input type="checkbox" id="murder" name="murder" value="murder">
+					<img src="..\static\images\murder.png" class="img-rounded" alt="murder" width="24" height="24">
+					<label for="murder">MURDER</label><br>
+				<input type="checkbox" id="murder" name="alarmringer" value="alarmringer">
+					<img src="..\static\images\alarmringer.png" class="img-rounded" alt="alarmringer" width="24" height="24">
+					<label for="alarmringer">ALARM RINGER</label><br>
+			</form>
+
+					<br>
+					<h4 class="myProfile">Create Alert</h4>
+					<input type="submit" value="Create Alert" class="btn btn-primary pull-left">
+
+		</div>
+		<div class="col-sm-6">
+			<div class="container">
+
+					<div class="container">
+						<h4>Alert Name</h4>
+						<input id="txtAlertName" class="form-control" type="text" placeholder="ex. Crimes Near Me" maxlength="300">
+					</div>
+					<br>
+			
+					<div class="container">
+						<h4>Email Address</h4>
+						<input class="form-control" type="text" maxlength="500">
+					</div>
+					<br>
+					
+					<div class="container">
+						<h4>Location Selection</h4>
+						<span class="subtitle" style="text-align:left">Enter an Address:</span>
+						<div>
+						<input id="txtAlertName" class="form-control" type="text" placeholder="ex. 200 Bolinas Rd" maxlength="300">
+						</div>
+					</div>
+					<br>
+					
+					<div class="container">
+					<h4>Choose a Search Distance</h4>
+					<input id="hfDefaultAlertDistance" type="hidden" value="804.672">
+					<select class="profileComboBox" id="Buffer" style="margin-left:-4px;">
+						<option value="152.4">500 feet</option>
+						<option value="304.8">1000 feet</option>
+						<option value="457.2">1500 feet</option>
+						<option value="402.336">1/4 mile</option>
+						<option selected="selected" value="804.672">1/2 mile</option>
+						<option value="1609.34">1 mile</option>
+						<option value="3218.69">2 miles</option>
+					</select>
+					</div>
+			</div>
+		</div>
+	</div>      
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<p></p>
+<div class="row">
+    <div class="col-md-3">
+       <button onclick="window.location.href='{{ url_for('home') }}';" class="btn btn-default">
+            <img src="..\static\images\graphs.png" width="29" alt="Crimes">
+        </button>
+        <button onclick="window.location.href='{{ url_for('activities') }}';" class="btn btn-default">
+            <img src="..\static\images\data.png" width="29" alt="Activities">
+        </button>
+        <button onclick="window.location.href='{{ url_for('income') }}';" class="btn btn-default">
+            <img src="..\static\images\map.png" width="29" alt="Income">
+        </button>
+        <button onclick="window.location.href='{{ url_for('covid') }}';" class="btn btn-default">
+            <img src="..\static\images\covid.png" width="29" alt="Covid">
+        </button>
+        <br>
+        <br>
+        <!--
+        <h6>SELECT NEIGHBORHOOD:</h6>
+            <form action="/action_page.php">
+            <label for="neigborhood"></label>
+            <select name="neigborhood" id="neigborhood">
+            <option value="alviso">Alviso</option>
+            <option value="rosegarden">Rose Garden</option>
+            <option value="northsanjose">North San Jose</option>
+            <option value="santanarow">Santana Row</option>
+            <option value="alumrock">Alum Rock</option>
+            <option value="westsanjose">West San Jose</option>
+            <option value="littleportugal">Little Portugal</option>
+            <option value="willowglen">Willow Glen</option>
+            <option value="mayfair">Mayfair</option>
+            <option value="littlesaigon">Little Saigon</option>
+            <option value="japantown">Japantown</option>
+            <option value="southsanjose">South San Jose</option>
+            <option value="downtown">Downtown</option>
+            <option value="evergreen">Evergreen</option>
+            <option value="littleitaly">Little Italy</option>
+            <option value="almadenvalley">Almaden Valley</option>
+            <option value="thealameda">The Alameda</option>
+            <option value="nagleepark">Naglee Park</option>
+
+            </select>
+            <input type="submit" class="btn btn-primary btn-sm" value="Go">
+            </form>
+        <br>
+        <br>
+    -->
+        <h6 id="section1">SAN JOSE NEIGHBORHOOD</h6>
+        <img src="..\static\images\sanjoseneighborhood1.jpg" alt="San Jose Neigborhood" width="300" height="300">
+        <br>
+        <br>
+        <h6 id="section1">SAN JOSE BEAT MAP</h6>
+        <img src="..\static\images\beatmap.jpg" alt="Oakland Police Beat Map" width="300" height="300%">
+        <br>
+        <!--<h6>SAN JOSE BEAT MAP</h6>
+        <a href="#section1"><img src="..\static\images\beatmap.jpg" alt="Oakland Police Beat Map" width="300" height="300"></a>
+        -->
+    </div>   
+    <div class="col-md-9">
+    <!-- This code makes a paragraph 
+    <img src="..\static\images\correlationgraphs.png" alt="San Jose Crime Correlation Graphs" width="80%" height="80%">
+    -->
+    <h3 id="section1">SAN JOSE CRIMES AND NEIGHBORHOOD ANALYTICS</h3>
+
+    <div class='tableauPlaceholder' id='viz1645911429249' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2019SanJoseCrimeCorrelation&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645911429249');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    <br>
+
+    <div class='tableauPlaceholder' id='viz1634069536850' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2019SanJoseCrimeCorrelation&#47;Dashboard9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634069536850');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    <br>
+    <div class='tableauPlaceholder' id='viz1634069649686' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard13&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2019SanJoseCrimeCorrelation&#47;Dashboard13' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard13&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634069649686');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <br> 
+
+    <div class='tableauPlaceholder' id='viz1634069467818' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2019SanJoseCrimeCorrelation&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634069467818');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <br>
+
+    
+    
+    <div class='tableauPlaceholder' id='viz1634069580487' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='2019SanJoseCrimeCorrelation&#47;Dashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;2019SanJoseCrimeCorrelation&#47;Dashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634069580487');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='750px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <br>
+
+
+    <h4>SAN JOSE CALIFORNIA CRIME MAP</h4>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1OSPOWhtBe7xqHobANGWvQZKjZ3nBcEO8" width="1152" height="864"></iframe>
+            <img class="loadMapTrigger lazyloaded" src="https://images.crimegrade.org/map/crime-rate-maps/safest-places-in-san-jose-ca-metro.webp" alt="San Jose Metro, CA Map of  Rates" data-ll-status="loaded" width="65%" height="65%">
+            <img src="..\static\images\safebar.png" alt="Safe Dangerous Bar" height="60">
+            <br>
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
